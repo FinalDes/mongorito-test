@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:FinalDes/mongorito-test.git",
   "author": "Alex Alonso <alex4551@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "mongorito": "^3.0.4"
+  }
 }
