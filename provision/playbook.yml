@@ -1,0 +1,15 @@
+---
+- hosts: all
+  become: true
+  roles:
+     - role: mongodb
+       version: 3.6
+       net:
+         port: 27017
+         bindIp:
+           - 0.0.0.0
+       config_path: /etc/mongod.conf
+       replication:
+         replSetName: jeko
+       security:
+         authorization: true
